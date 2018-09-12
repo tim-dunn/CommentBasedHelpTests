@@ -184,6 +184,9 @@ Describe "$moduleName function comment-based help" `
 
                     $example |
                     Should Not Be $null
+
+                    $example |
+                    Should Not Be $false
                 }
 
             } # $helpData.Parameters.Parameter | ForEach-Object
